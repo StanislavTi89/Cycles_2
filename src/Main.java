@@ -31,18 +31,19 @@ public class Main {
         int y = 12_000_000;
         int born = 17;
         int death = 8;
-        int year = 1;
-        int totalBorn = y / 1000 * born - death;
-        while (year > totalBorn){
-            for (; year <= 10; year++)
-                System.out.println("Год " + year + ", численность населения составляет " + totalBorn);
+        for (int year = 1; year<=10; year++){
+            y+=((y+born)-death)/1000;
+            System.out.println("Год " + year + ", численность населения составляет " + y);
         }
-// продолжение следует...
 
         //Задание 4
         System.out.println("Задание 4");
         int startCash = 15000;
-        int percent1 = 7;
+        double percent1 = 0.07;
+        double percentCash = 0;
+        for (int totalM = 1; percentCash < 12_000_000; totalM++) {
+            percentCash = percentCash + (startCash * percent1);
+        }
 
     }
 }
