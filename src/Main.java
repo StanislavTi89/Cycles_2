@@ -38,12 +38,16 @@ public class Main {
 
         //Задание 4
         System.out.println("Задание 4");
-        int startCash = 15000;
-        double percent1 = 0.07;
-        double percentCash = 0;
-        for (int totalM = 1; percentCash < 12_000_000; totalM++) {
-            percentCash = percentCash + (startCash * percent1);
+        int accumulation2 = 15000;
+        double sumPercent2 = 0;
+        double percent2 = 0.07;
+        int i2 = 0;
+        while (12_000_000 > sumPercent2){
+            i2++;
+                sumPercent2 = (sumPercent2 + accumulation2) * (1 + percent2);
+            System.out.println("Месяц " + i2 + ", сумма накоплений равна " + sumPercent2 + " рублей");
         }
+
 
     }
 }
