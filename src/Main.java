@@ -46,7 +46,7 @@ public class Main {
         double percent2 = 0.07;
         for (; accumulation2 < fullSum; monthSum++){
             accumulation2+=accumulation2*percent2;
-            System.out.println("Месяц " + monthSum + ", сумма сумма накоплений равна " + accumulation2 + " рублей");
+            System.out.println("Месяц " + monthSum + ", сумма накоплений равна " + accumulation2 + " рублей");
 
         }
 
@@ -54,7 +54,7 @@ public class Main {
         System.out.println("Задание 5");
         for (monthSum = 6; monthSum <100; monthSum +=6){
             accumulation2*=6;
-                System.out.println("Месяц " + monthSum + ", сумма сумма накоплений равна " + accumulation2 + " рублей");
+                System.out.println("Месяц " + monthSum + ", сумма накоплений равна " + accumulation2 + " рублей");
         }
 
     }
