@@ -62,5 +62,19 @@ public class Main {
                 System.out.println("Месяц " + monthSum6 + ", сумма накоплений равна " + accumulation6 + " рублей");
             }
         }
+
+
+        //Задание 6
+        System.out.println("Задание 6");
+        int month9 = 9*12;
+        int monthSum9 = 1;
+        int accumulation9 = 15000;
+        double percent9 = 0.07;
+        for (; monthSum9 <= month9; monthSum9++){
+            accumulation9 += accumulation9 * percent9;
+                System.out.println("Месяц " + monthSum9 + ", сумма накоплений равна " + accumulation9 + " рублей");
+        }
+
+
     }
 }
