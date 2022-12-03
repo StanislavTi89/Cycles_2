@@ -30,12 +30,12 @@ public class Main {
 
         //Задание 3
         System.out.println("Задание 3");
-        int y = 12_000_000;
+        int population = 12_000_000;
         int born = 17;
         int death = 8;
-        for (int year = 1; year<=10; year++){
-            y+=((y+born)-death)/1000;
-            System.out.println("Год " + year + ", численность населения составляет " + y);
+        for (int year = 1; year <= 10; year++){
+            population += (population*(born-death))/1000;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
 
         //Задание 4
@@ -75,6 +75,7 @@ public class Main {
                 System.out.println("Месяц " + monthSum9 + ", сумма накоплений равна " + accumulation9 + " рублей");
         }
 
-
+        //Задание 7
+        System.out.println("Задание 7");
     }
 }
