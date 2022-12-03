@@ -52,10 +52,15 @@ public class Main {
 
         //Задание 5
         System.out.println("Задание 5");
-        for (monthSum = 6; monthSum <100; monthSum +=6){
-            accumulation2*=6;
-                System.out.println("Месяц " + monthSum + ", сумма накоплений равна " + accumulation2 + " рублей");
+        int fullSum6 = 12_000_000;
+        int monthSum6 = 0;
+        int accumulation6 = 15000;
+        double percent6 = 0.07;
+        for (; accumulation6 < fullSum6; monthSum6++){
+            accumulation6 += accumulation6 * percent6;
+            if (monthSum6 % 6 == 0) {
+                System.out.println("Месяц " + monthSum6 + ", сумма накоплений равна " + accumulation6 + " рублей");
+            }
         }
-
     }
 }
