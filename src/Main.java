@@ -98,5 +98,11 @@ public class Main {
             }
             year+=period;
         }
+
+        //Задание 9
+        System.out.println("Задание 9");
+        for (int j = 1; j<=10; j++){
+            System.out.println("2 * " + j + " = " + 2 * j);
+        }
     }
 }
