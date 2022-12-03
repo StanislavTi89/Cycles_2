@@ -20,11 +20,13 @@ public class Main {
         int ia = 0;
         while (ia <10) {
             ia++;
-            System.out.println(ia);
+            System.out.print(" " + ia);
         }
+        System.out.println();
         for (ia = 10; ia >= 1; ia--){
-            System.out.println(ia);
+            System.out.print(" " + ia);
         }
+        System.out.println();
 
         //Задание 3
         System.out.println("Задание 3");
@@ -39,13 +41,19 @@ public class Main {
         //Задание 4
         System.out.println("Задание 4");
         int accumulation2 = 15000;
-        double sumPercent2 = 0;
-        double percent2 = 0.07;
+        float sumPercent2 = 0;
+        float percent2 = 0.07f;
         int i2 = 0;
-        while (12_000_000 > sumPercent2){
-            i2++;
-                sumPercent2 = (sumPercent2 + accumulation2) * (1 + percent2);
+        while (sumPercent2 < 12_000_000){
+                i2++;
+            sumPercent2 = (sumPercent2 + accumulation2) * ( 1 + percent2);
             System.out.println("Месяц " + i2 + ", сумма накоплений равна " + sumPercent2 + " рублей");
+        }
+
+        //Задание 5
+        System.out.println("Задание 5");
+        for (i2 = 6 ;i2<100; i2+=6){
+            System.out.println(i2);
         }
 
 
