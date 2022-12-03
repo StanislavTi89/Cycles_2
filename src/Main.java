@@ -41,7 +41,7 @@ public class Main {
         //Задание 4
         System.out.println("Задание 4");
         int fullSum = 12_000_000;
-        int monthSum = 0;
+        int monthSum = 1;
         int accumulation2 = 15000;
         double percent2 = 0.07;
         for (; accumulation2 < fullSum; monthSum++){
@@ -53,7 +53,7 @@ public class Main {
         //Задание 5
         System.out.println("Задание 5");
         int fullSum6 = 12_000_000;
-        int monthSum6 = 0;
+        int monthSum6 = 1;
         int accumulation6 = 15000;
         double percent6 = 0.07;
         for (; accumulation6 < fullSum6; monthSum6++){
@@ -77,5 +77,9 @@ public class Main {
 
         //Задание 7
         System.out.println("Задание 7");
+
+
+        //Задание 8
+        System.out.println("Задание 8");
     }
 }
