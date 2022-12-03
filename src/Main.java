@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Циклы. Часть 2");
@@ -77,9 +79,24 @@ public class Main {
 
         //Задание 7
         System.out.println("Задание 7");
+        int firstFriday = 5;
+        for (int day = firstFriday; day<=31; day+=7){
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
+        }
 
 
         //Задание 8
         System.out.println("Задание 8");
+        int year = 0;
+        int nowYear = LocalDate.now().getYear();
+        int startYear = nowYear - 200;
+        int finishYear = nowYear + 100;
+        int period = 79;
+        while (year<=finishYear){
+            if (year>=startYear){
+                System.out.println(year);
+            }
+            year+=period;
+        }
     }
 }
